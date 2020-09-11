@@ -1,0 +1,25 @@
+
+<div id="app">
+  <div>
+    <h1> Tool: Find and Replace Text</h1>
+    <div style="padding-top:8px;">
+      <textarea v-model="find_this" style="width:100%;" rows="4" wrap="off"></textarea>
+    </div>
+  </div>
+  <div style="padding-top:4px;">Replace with:</div>
+  <div style="padding-top:4px;">
+    <textarea v-model="replace_with" style="width:100%;" rows="4" wrap="off"></textarea>
+  </div>
+  <div style="padding:7px 0px 7px 0px;">
+    <button @click="replacetext">Find and Replace Text</button>
+    <input title="Case Sensitive" type="checkbox" v-model="globl">Global matching.
+    <input title="Case Sensitive" type="checkbox" v-model="case_sen">Case sensitive.
+    <span id="found">
+      {{found}}
+    </span>
+  </div>
+  <textarea v-model="input_output" style="width:100%;" rows="4" wrap="off"></textarea>
+
+</div>
+
+</div>
